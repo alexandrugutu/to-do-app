@@ -1,0 +1,53 @@
+{
+  "name": "project",
+  "version": "1.0.0",
+  "description": "movie app",
+  "main": "webpack.config.js",
+  "scripts": {
+    "start:prod:backend": "node ./dist/backend/index.js",
+    "start:dev:backend": "nodemon src/backend/index",
+    "start:prod:frontend": "http-server ./dist",
+    "start:dev:frontend": "webpack serve",
+    "start:dev": "concurrently \"yarn start:dev:frontend \" \"yarn start:dev:backend\"",
+    "start:prod": "yarn build:prod && concurrently \"yarn start:prod:frontend \" \"yarn start:prod:backend\"",
+    "remove:dist": "rimraf ./dist",
+    "copy:backend": "copyfiles -u 1 ./src/backend/**/**/*.* ./dist",
+    "build:prod": "yarn remove:dist && webpack && yarn build:frontend && yarn build:backend",
+    "build:frontend": "webpack",
+    "build:backend": "yarn copy:backend"
+  },
+  "dependencies": {
+    "body-parser": "1.19.0",
+    "cors": "2.8.5",
+    "express": "4.17.1",
+    "font-awesome": "4.7.0",
+    "normalize.css": "8.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "4.11.1",
+    "concurrently": "6.0.0",
+    "copyfiles": "^2.4.1",
+    "html-webpack-plugin": "5.3.1",
+    "nodemon": "2.0.7",
+    "rimraf": "3.0.2",
+    "webpack": "5.28.0",
+    "webpack-bundle-analyzer": "4.4.0",
+    "webpack-cli": "4.6.0",
+    "mini-css-extract-plugin": "1.5.0",
+    "css-loader": "5.2.2",
+    "http-server": "0.12.3",
+    "webpack-dev-server": "3.11.2",
+    "sass-loader": "11.0.1",
+    "sass": "1.32.10",
+    "yarn": "1.22.10"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/alexandrugutu?tab=repositories"
+  },
+  "keywords": [
+    "web"
+  ],
+  "author": "Alexandru Gutu",
+  "license": "ISC"
+}

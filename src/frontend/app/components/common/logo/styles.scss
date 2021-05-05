@@ -1,0 +1,8 @@
+$kinogo-logo-url: 'https://kinogoo.by/templates/Kinogooby/images/kinogo.png';
+
+.logo {
+    background-image: url($kinogo-logo-url);
+    width: 91px;
+    height: 26px;
+    padding: 0;
+}

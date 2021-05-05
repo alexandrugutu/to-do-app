@@ -1,0 +1,34 @@
+.movie-recommendation {
+    color: black;
+    /* width: 250px; */
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // text-align: center;
+}
+.description {
+    margin-top: 1rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.button-open-movie {
+    align-self: stretch;
+}
+
+// .label {
+//     color: #D6D6D6;
+// }
+
+.title {
+    color:#FFFFFF;
+}
+
+// .poster {
+//     width: 200px;
+//     height: 300px;
+// }
+.card-no-border {
+    border: none;
+}

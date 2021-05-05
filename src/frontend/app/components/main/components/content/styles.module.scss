@@ -1,0 +1,22 @@
+$gap: 1rem;
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: $gap;
+    padding-left: $gap;
+    padding-right: $gap;
+    // grid-auto-rows: 700px;
+}
+
+.heading {
+    color: #FFFFFF;
+}
+
+.poster {
+    width: 500px;
+}
+
+.contentStyles {
+    color: green;
+}

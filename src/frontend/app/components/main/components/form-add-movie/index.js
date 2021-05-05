@@ -1,0 +1,1 @@
+export {FormAddMovie} from './component';

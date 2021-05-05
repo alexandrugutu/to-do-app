@@ -1,0 +1,14 @@
+
+$above-bootstrap-modal: 1061;
+
+.spinner{
+    position: fixed;
+    color: #FF00B1;
+    z-index: $above-bootstrap-modal;
+    left: calc(50% - 32px);
+    top: calc(50% - 32px)
+}
+
+// :global(.loading) {
+    
+// }
